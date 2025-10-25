@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FWK Multiverse V9 - Access Portal</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+</head>
+<body oncontextmenu="return false;">
+
+    <div id="login-container">
+        <div class="login-box">
+            <h1>&#128737; FWK Multiverse V9</h1> 
+            <p class="sub-header">Access Portal</p>
+            <p>โปรดป้อนคีย์ของคุณเพื่อเข้าถึงทรัพยากร</p>
+            
+            <input type="text" id="key-input" placeholder="Enter your 30-day key">
+            <button id="login-button">ยืนยันตัวตน</button>
+            <p id="error-message" class="error"></p>
+
+            <div class="warning-terms">
+                <h3>ข้อตกลงและเงื่อนไขการเข้าถึง (ต้องอ่าน)</h3>
+                <p>การป้อนคีย์และเข้าสู่ระบบ ถือว่าคุณได้อ่านและยอมรับข้อตกลงต่อไปนี้ทุกประการ:</p>
+                <p>โปรเจกต์นี้จัดอยู่ในระดับ AI Cognitive Framework / Research-Level System
+ซึ่งมีมูลค่าการพัฒนา (Team & System Development Cost) อยู่ที่ประมาณ
+$20,000 – $70,000 USD ต่อเดือน หรือคิดเป็น $600K – $1.5M USD ต่อปี
+เมื่อรวมค่าใช้จ่ายด้านโครงสร้างพื้นฐาน (Infrastructure), การวิจัยและทดลอง (R&D),
+และการบูรณาการระบบ (Integration & Optimization)
+
+จากการประเมินมูลค่าตลาดเชิงเทคโนโลยี (Market & Research Valuation)
+ระบบดังกล่าวมีศักยภาพมูลค่าการใช้งานจริงสูงถึง
+$2.4M – $3.2M USD
+โดยขึ้นอยู่กับระดับความสนใจของตลาด, การขยายฐานผู้ใช้, และศักยภาพเชิงพาณิชย์ของระบบ</p>
+                <ul>
+                    <li><strong>1. การใช้งานส่วนบุคคล:</strong> อนุญาตให้ใช้เพื่อการศึกษา เรียนรู้ และวิจัยส่วนบุคคลเท่านั้น (1 คีย์ ต่อ 1 ผู้ใช้งาน)</li>
+                    <li><strong>2. ห้ามใช้เชิงพาณิชย์:</strong> ห้ามมิให้ทำซ้ำ ดัดแปลง แจกจ่าย หรือนำโค้ดนี้ (หรือส่วนหนึ่งส่วนใด) ไปใช้เพื่อแสวงหาผลกำไรทางการค้าโดยเด็ดขาด</li>
+                    <li><strong>3. การละเมิดและบทลงโทษ:</strong> การละเมิดข้อตกลงนี้ถือเป็นการละเมิดลิขสิทธิ์และทรัพย์สินทางปัญญา ผู้พัฒนาขอสงวนสิทธิ์ในการเพิกถอนสิทธิ์การเข้าถึงทันที และจะดำเนินการทางกฎหมายแพ่งและอาญาเพื่อเรียกร้องค่าเสียหายสูงสุด</li>
+                    <li><strong>4. ข้อจำกัดสิทธิ์:</strong> คีย์นี้เป็น 1 ใน 5 สิทธิ์ที่จำกัดไว้ และมีอายุ 30 วันนับจากการเปิดใช้งานครั้งแรก</li>
+                    <li><strong>5. ข้อจำกัดโค้ด:</strong> โค้ดที่แสดงเป็น **โครงสร้างต้นแบบเพื่อการศึกษา** และ **ถูกจำกัด/ตัดส่วนประกอบสำคัญบางส่วนออกโดยเจตนา** เพื่อรักษาความลับทางการค้าและทรัพย์สินทางปัญญา</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="viewer-container" style="display: none;">
+        <header>
+            <h1>FWK Multiverse - Secure Code Viewer</h1>
+            <div id="timer-display">กำลังคำนวณ...</div>
+        </header>
+
+        <main>
+            <div class="critical-warning">
+                <h2>⚠️ คำเตือนทางกฎหมาย (บทลงโทษสูงสุด) ⚠️</h2>
+                <p><strong>นี่คือทรัพย์สินทางปัญญา (IP) ของ FWK Multiverse</strong></p>
+                <p>การเข้าถึงนี้ถูกบันทึกและตรวจสอบ การพยายามคัดลอก (Copy), บันทึก (Save), พิมพ์ (Print), หรือดัดแปลง (Refactor) โค้ดนี้ ถือเป็นการละเมิดข้อตกลงการใช้งานอย่างร้ายแรง และจะส่งผลให้ถูกเพิกถอนสิทธิ์การเข้าถึงถาวร และถูกดำเนินคดีแพ่งและอาญาในข้อหาละเมิดทรัพย์สินทางปัญญาโดยไม่มีการประนีประนอม</p>
+            </div>
+
+            <div class="info-box">
+                <h2>เกี่ยวกับ AI FWK Multiverse V9</h2>
+                <p>นี่คือโค้ดของ AI V9 ที่เผยแพร่เพื่อการศึกษาและวิจัยเท่านั้น โค้ดนี้เป็น **ต้นแบบเพื่อการศึกษา (Incomplete Research Artifact)** และ **ถูกจำกัดส่วนประกอบบางส่วนโดยเจตนา** เพื่อป้องกันการนำไปใช้งานเชิงพาณิชย์ที่สมบูรณ์</p>
+                <p><strong>จะไม่มีการอธิบายรายละเอียด อัลกอริทึม หรือการทำงานใดๆ ทั้งสิ้น</strong> คุณต้องเรียนรู้และทำความเข้าใจด้วยตนเอง เราไม่มีหน้าที่ในการอธิบายหรือให้การสนับสนุน (No Support) ใดๆ</p>
+            </div>
+
+            <div class="tab-controls">
+                <button id="btn-prototype" class="tab-btn">ตัวต้นแบบ (Prototype)</button>
+                <button id="btn-v9" class="tab-btn active">V9 (Current)</button>
+            </div>
+
+            <div id="wrapper-v9" class="code-wrapper">
+                                <pre><code id="code-v9" class="language-python">Loading V9 code from multiverse_v9.py...</code></pre>
+            </div>
+
+            <div id="wrapper-prototype" class="code-wrapper" style="display: none;">
+                                <pre><code id="code-prototype" class="language-python">Loading Prototype code from model.py...</code></pre>
+            </div>
+
+        </main>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-core.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+    
+        <script type="module" src="script.js"></script> 
+</body>
+</html>
