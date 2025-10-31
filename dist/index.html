@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n-key="head.title">FWK Multiverse V9 - Access Portal</title>
+    
+    <meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+    <meta name="googlebot" content="noindex, nofollow, noarchive, nosnippet, notranslate, noimageindex, max-video-preview:-1, max-image-preview:none, max-snippet:-1">
+    <meta name="GPTBot" content="noindex, nofollow">
+    <meta name="CCBot" content="noindex, nofollow">
+    <meta name="anthropic-ai" content="noindex, nofollow">
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+  <script type="module" crossorigin src="/assets/index-CfJAe7XH.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-CuuWye_v.css">
+</head>
+<body oncontextmenu="return false;">
+
+    <div id="splash-container" class="container">
+        <div class="splash-content card">
+            <h1 class="splash-logo">&#128737; FWK MULTIVERSE</h1>
+            <p class="splash-sub-header">Cognitive Framework // Access Portal</p>
+            
+            <div class="splash-details">
+                <div class="splash-left">
+                    <h3>CLASSIFIED</h3>
+                    <p>This system provides access to research-level intellectual property. All access is monitored, logged, and audited.</p>
+                </div>
+                <div class="splash-right">
+                    <h3>SECURE</h3>
+                    <p>Unauthorized reproduction, distribution, or analysis is strictly prohibited and enforced by international copyright law.</p>
+                </div>
+            </div>
+
+            <button id="splash-continue-button">Enter Portal</button>
+        </div>
+    </div>
+
+    <div id="login-container" class="container" style="display: none;">
+        <div class="login-box card">
+            <h1 class="logo">&#128737; FWK Multiverse V9</h1>
+            <p class="sub-header" data-i18n-key="login.subheader">Access Portal</p>
+            <p data-i18n-key="login.prompt">Please enter your key to access resources.</p>
+            
+            <input type="text" id="key-input" data-i18n-key="login.input_placeholder" placeholder="Enter your key">
+            <button id="login-button" data-i18n-key="login.button">Authenticate</button>
+            <p id="error-message" class="error"></p>
+
+            <div class="terms-box">
+                <h3 data-i18n-key="terms.title">Access Agreement (Must Read)</h3>
+                <div class="terms-content">
+                    <p data-i18n-key="terms.valuation_title">This project is classified as an AI Cognitive Framework / Research-Level System.</p>
+                    <p data-i18n-key="terms.valuation_details">Development Cost (Team & System): ~$20k - $70k USD/month ($600k - $1.5M USD/year).<br>
+                        Market & Research Valuation: Potential $2.4M - $3.2M USD, based on market interest and commercial potential.</p>
+                    <ul>
+                        <li data-i18n-key="terms.rule1"><strong>1. Personal Use:</strong> For educational and research purposes only (1 key per user).</li>
+                        <li data-i18n-key="terms.rule2"><strong>2. No Commercial Use:</strong> Reproduction, modification, distribution, or commercial exploitation is strictly prohibited.</li>
+                        <li data-i18n-key="terms.rule3"><strong>3. Penalties:</strong> Violation is copyright and IP infringement, resulting in immediate access revocation and maximum legal damages.</li>
+                        <li data-i18n-key="terms.rule4"><strong>4. Limited License:</strong> This key is 1 of 5 limited licenses and expires 30 days after first activation.</li>
+                        <li data-i18n-key="terms.rule5"><strong>5. Incomplete Code:</strong> The code shown is an <strong>educational prototype</strong> and has been <strong>intentionally restricted/redacted</strong> to protect trade secrets.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="viewer-container" class="container" style="display: none;">
+        
+        <header class="card">
+            <h1 class="logo-viewer">&#128737; FWK Multiverse</h1>
+            <div class="header-right">
+                <div id="timer-display" data-i18n-key="viewer.timer_loading">Calculating...</div>
+                <button id="admin-logout-button" style="display: none;" data-i18n-key="viewer.admin_logout">Admin Logout</button>
+            </div>
+        </header>
+
+        <main>
+            <div class="warning-box critical-warning card">
+                <h2 data-i18n-key="viewer.legal_title">⚠️ LEGAL WARNING (MAXIMUM PENALTY) ⚠️</h2>
+                <p><strong data-i18n-key="viewer.legal_ip">This is FWK Multiverse Intellectual Property (IP).</strong></p>
+                <p data-i18n-key="viewer.legal_details">Access is logged and monitored. Any attempt to Copy, Save, Print, or Refactor this code is a severe breach of the user agreement, resulting in permanent revocation and uncompromising legal action.</p>
+            </div>
+
+            <div class="warning-box info-box card">
+                <h2 data-i18n-key="viewer.info_title">About AI FWK Multiverse V9</h2>
+                <p data-i18n-key="viewer.info_details1">This is the AI V9 code, released for educational/research purposes only. This code is an <strong>Incomplete Research Artifact</strong> and <strong>intentionally restricted</strong> to prevent full commercial use.</p>
+                <p><strong data-i18n-key="viewer.info_details2">No explanation of algorithms or functionality will be provided.</strong> You must learn and understand it yourself. We offer no support.</p>
+            </div>
+
+            <div class="code-viewer card">
+                <div class="tab-controls">
+                    <button id="btn-prototype" class="tab-btn" data-i18n-key="viewer.tab_prototype">Prototype</button>
+                    <button id="btn-v9" class="tab-btn active" data-i18n-key="viewer.tab_v9">V9 (Current)</button>
+                </div>
+
+                <div id="wrapper-v9" class="code-wrapper">
+                    <pre><code id="code-v9" class="language-python">Loading V9 code...</code></pre>
+                </div>
+
+                <div id="wrapper-prototype" class="code-wrapper" style="display: none;">
+                    <pre><code id="code-prototype" class="language-python">Loading Prototype code...</code></pre>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-core.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+     
+</body>
+</html>
